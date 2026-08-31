@@ -46,5 +46,8 @@ int main() {
     delete [] exam2;
     exam2 = nullptr;
 
+    // El unique_ptr seria buen canditato para este caso ya que si no se pusiera el delete,
+    //los arreglos podrian causar un memory leak grande, segun los valores escogidos.
+
     return 0;
 }
